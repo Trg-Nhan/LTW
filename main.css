@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #2ff5fc, #ee2d2d);
+}
+.Khung{
+    max-width: 700px;
+    width: 100;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.Khung .title{
+    font-size: 25px;
+    font-weight: 300;
+    position: relative;
+}
+.Khung .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 138px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+.content form .ChiTiet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .ChiTiet .NhapVao{
+    margin-bottom: 10px;
+    width: calc(100/2 - 15px);
+}
+form .NhapVao id.Bang{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.ChiTiet .NhapVao input{
+    height: 20px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.ChiTiet .NhapVao input:focus,
+.ChiTiet .NhapVao input:valid{
+  border-color: darkcyan;
+}
+form .button{
+    height: 45px;
+    margin: 35px 0
+  }
+  form .button input{
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #f55353, #3cf9ff);
+  }
+
